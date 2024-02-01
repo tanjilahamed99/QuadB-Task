@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 const DisplayMovie = ({ data }) => {
 
-    const { name, image, rating, genres, language, averageRuntime, summary } = data
-    console.log(data)
+    const { name, image, rating, genres, language, averageRuntime, summary,id } = data
 
 
 
@@ -36,7 +35,7 @@ const DisplayMovie = ({ data }) => {
 
             <p className="text-center text-sm text-gray-500 pb-2">{summary.slice(0, 100)}...</p>
 
-            <Link to={`/details/${data}`}>
+            <Link className='w-full mx-auto flex justify-center' to={`/details/${id}`}>
                 <button className="hover:bg-[#0095FF] hover:scale-95 font-medium hover:text-white w-[80%] py-2 rounded-full hover:shadow-xl   text-gray-400 shadow-[0px_0px_10px_#E2DADA] t duration-500">View Details</button>
             </Link>
         </div>

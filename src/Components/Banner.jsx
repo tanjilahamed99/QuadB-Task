@@ -8,13 +8,13 @@ const Banner = () => {
                         <p>Top Trending</p>
                         <hr className="border-2 w-[90px] mt-1 " />
                     </div>
-                    <h1 className="mb-5 text-5xl font-bold leading-[60px]">
+                    <h1 className="mb-5 lg:text-5xl text-3xl font-bold lg:leading-[60px]">
                         QuadB: Where Cinematic <span className="text-blue-200">Worlds Collide</span></h1>
+                        
                     <p className="mb-5">QuadB is your ultimate destination for all things cinema. Dive into a vast library of movies, explore curated lists, and engage with fellow film enthusiasts. With reviews, recommendations, and exclusive content, QuadB is your ticket to cinematic bliss.</p>
                     <button className="btn btn-primary">Get Started</button>
                 </div>
-                <div className="md:w-1/2">
-                    <img className="w-full" src="https://i.ibb.co/w4k0kyC/pngwing-com-3.png" alt="" />
+                <div className="md:w-1/3">
                 </div>
             </div>
         </div>

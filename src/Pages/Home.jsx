@@ -22,9 +22,9 @@ const Home = () => {
         <div>
             <Navbar />
             <Banner />
-            <div className="my-20">
+            <div className="my-20 px-3">
                 <h2 className="text-center text-3xl font-bold">Popular Movies</h2>
-                <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-5 items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {
                         movie?.map((data, idx) => <DisplayMovie key={idx} data={data.show}></DisplayMovie>)
                     }

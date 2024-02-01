@@ -51,7 +51,6 @@ const Details = () => {
         }
     }
 
-
     return (
         <div>
             <Navbar />
@@ -83,28 +82,25 @@ const Details = () => {
                     </div>
                 </div>
                 <div className="mt-5 md:px-12 px-5 flex md:flex-row flex-col gap-20">
-                <div className="lg:w-[60%]">
-                    <h2 className="font-semibold ">{mainData?.genres[0]}</h2>
-                    <h1 className="font-bold text-3xl  my-3">{}</h1>
-                    {/* <p>{mainData?.summary}</p> */}
-                    <div className="my-10 flex flex-col md:flex-row md:items-center gap-5 justify-between">
-                        {/* <h2 className="font-semibold text-lg">Rating: {mainData?.rating}</h2> */}
-                        
+                    <div className="lg:w-[60%]">
+                        <h2 className="font-semibold ">{mainData?.genres[0]}</h2>
+                        <h1 className="font-bold text-3xl  my-3">{ }</h1>
+                        <p>{mainData?.summary}</p>
+                        <div className="my-10 flex flex-col md:flex-row md:items-center gap-5 justify-between">
+                            <h2 className="font-semibold text-lg">Rating: {mainData?.rating.average}</h2>
+                        </div>
+                    </div>
+                    <div className="md:w-[40%]">
+                        <h2 className="font-semibold text-3xl">Country</h2>
+                        <div className="mt-4 space-y-3">
+                            <p className="text-lg font-semibold">Name: {mainData?.network?.country?.name}</p>
+                            <hr />
+                            <p className="text-lg font-semibold">Code : {mainData?.network?.country?.code}</p>
+                            <hr />
+                            <p className="text-lg font-semibold">Time Zone : {mainData?.network?.country?.timezone}</p>
+                        </div>
                     </div>
                 </div>
-                {/* <div className="md:w-[40%]">
-                    <h2 className="font-semibold text-3xl">Amenities</h2>
-                    <div className="mt-4 space-y-3">
-                        <p className="text-lg font-semibold">{amenities[0]}</p>
-                        <hr />
-                        <p className="text-lg font-semibold">{amenities[1]}</p>
-                        <hr />
-                        <p className="text-lg font-semibold">{amenities[2]}</p>
-                        <hr />
-                        <p className="text-lg font-semibold">{amenities[3]}</p>
-                    </div>
-                </div> */}
-            </div>
             </div>
             <Footer />
         </div>

@@ -11,7 +11,7 @@ const Banner = () => {
                     <h1 className="mb-5 lg:text-5xl text-3xl font-bold lg:leading-[60px]">
                         QuadB: Where Cinematic <span className="text-blue-200">Worlds Collide</span></h1>
                         
-                    <p className="mb-5">QuadB is your ultimate destination for all things cinema. Dive into a vast library of movies, explore curated lists, and engage with fellow film enthusiasts. With reviews, recommendations, and exclusive content, QuadB is your ticket to cinematic bliss.</p>
+                    <p className="mb-5">QuadB is your ultimate destination for all things cinema. Dive into a vast library of movies, explore curated lists, and engage with fellow film enthusiasts. With reviews, recommendations, and exclusive content, QuadB is your ticket to cinematic bliss</p>
                     <button className="btn btn-primary">Get Started</button>
                 </div>
                 <div className="md:w-1/3">
